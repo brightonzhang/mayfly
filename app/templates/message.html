@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="well col-md-8 col-centered">
+    <div class="bd-highlight text-center">
+        <p class="font-weight-bolder lead">消息内容</p>
+    </div>
+
+    <div id="msgcontent">
+        <pre class="pre-scrollable prettyprint linenums rounded-lg" id="outputpre"
+            style="font-size: 1.5em; background-color:#C7EDCC;  white-space: pre-wrap; word-wrap: break-word;">{{content}}</pre>
+    </div>
+
+    <button id="replymsg" class="btn btn-primary btn-block">
+        回复
+    </button>
+</div>
+{% endblock %}

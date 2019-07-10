@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="well col-md-8 col-centered">
+    <textarea class="form-control" style="min-width: 100%" id="msgText"
+        placeholder="在此输入内容，点击‘提交’按钮创建消息。
+分享页面可传递消息，消息被读取后随即销毁。"></textarea>
+    <br />
+
+    <button id="submitmsg" class="btn btn-primary btn-block" >
+        <span id="postingspinner" class="spinner-border spinner-border-sm " role="status" aria-hidden="true" style="display:none"></span>
+        提交
+    </button>
+</div>
+{% endblock %}
