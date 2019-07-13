@@ -1,9 +1,8 @@
 {% extends "base.html" %}
-<!--继承基础模板-->
-{% block content %}
-<!--自定义模板区域-->
 
-<div class="d-flex justify-content-around flex-wrap flex-column bd-highlight" style="height: 80vh;width: 100vh;">
+{% block content %}
+
+<div class="d-flex justify-content-around flex-wrap flex-column bd-highlight w-100"  style="height: 80vh;"> 
     <div class="bd-highlight"></div>
 
     <div id="notification" class="bd-highlight text-center">
@@ -14,4 +13,5 @@
         <img src="{{ url_for('static', filename='img/2836360b6f.png') }}" >
     </div>
 </div>
+
 {% endblock %}

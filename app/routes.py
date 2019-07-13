@@ -42,3 +42,7 @@ def message(id):
         return render_template('message.html', content=content.decode())
 
     return render_template('oops.html')
+
+# @app.route('/stub')
+# def stub():
+#     return render_template('ashes.html')
