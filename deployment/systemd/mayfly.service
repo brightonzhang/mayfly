@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve mayfly
+After=network.target
+
+[Service]
+User=brighton
+Group=www-data
+WorkingDirectory=/home/brighton/mayfly
+Environment="PATH=/home/brighton/mayfly/venv/bin"
+ExecStart=/home/brighton/mayfly/venv/bin/uwsgi --ini deployment/uwsgi/mayfly.ini 
+
+[Install]
+WantedBy=multi-user.target
